@@ -30,7 +30,6 @@ targetCompatibility = 1.8
 
 dependencies {
     compile('org.springframework.boot:spring-boot-starter-web') { exclude module: 'spring-boot-starter-tomcat'}
-    compile("org.springframework.boot:spring-boot-starter-jetty")
-    testCompile("junit:junit")
-    testCompile("org.springframework.boot:spring-boot-starter-test")
+    compile 'org.eclipse.jetty:jetty-webapp:9.+'
+    compile 'org.eclipse.jetty:jetty-jsp:9.+'
 }
